@@ -3,18 +3,20 @@ package Day1;
 public class Identifiers {
 
 	public static void main(String[] args) {
-		int value1 = 9 / 2; //integer division
-		float value2 = 101 / 61;
-		double value3 = 10d / 6d;
-		float value4 = 5/2.5f; //float division
-		System.out.println("value 1=" + value1);
-		System.out.println("value 2=" + value2);
-		System.out.println("value 3=" + value3);
-		System.out.println("value 4=" + value4);
-		int marker = 512;
-		//assigning expression to variable
-		double percentage = marker * 0.46f;
-		System.out.println("percentage :" + percentage);
+		// variable declaration - Invalid Identifier Examples
+		/* int for = 13;// error because keyword cannot be identifier
+		System.out.println("value of the number variable is : "+ for);*/
+		/*
+		int number 2 = 13; //error because do not add space within identifier
+		System.out.println("value of the number variable is : "+ number 2);
+		*/
+		// error because Identifier can not starts with @, #
+		//int @number3 = 10;
+		//Valid Identifier Examples
+		int $number = 20; //starts with $
+		System.out.println("value of the number variable is : "+ $number);
+		String studentName="Aniket"; //use camelcase
+		System.out.println("value is : "+ studentName);
 	}
 
 }
